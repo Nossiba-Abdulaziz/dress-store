@@ -48,17 +48,19 @@ class Homepage extends StatelessWidget {
 
     return Container(
         padding: EdgeInsets.all(5),
-        height: 100,
-margin: EdgeInsets.symmetric(vertical: 20),
-       width: (MediaQuery.of(con).size.width*(2/3)-5),
+      height:150,
+margin: EdgeInsets.symmetric(horizontal: 5),
+      // width: (MediaQuery.of(con).size.width*(2/3)-5),
       child:Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
+       // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+       // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
            Image.network(p.image),
       Container(
+        margin: EdgeInsets.symmetric(horizontal: 10),
+      padding: EdgeInsets.symmetric(vertical: 30),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        //crossAxisAlignment: CrossAxisAlignment.start,
         children: [
         Text(p.title ,style: TextStyle(fontSize: 19,fontWeight: FontWeight.bold ),),
           Text(p.description),
@@ -73,6 +75,7 @@ margin: EdgeInsets.symmetric(vertical: 20),
                ),
              ),
             Container(
+              padding: EdgeInsets.symmetric(horizontal: 10),
               child: Column(
                 children: [
               Text("Color" ,style: TextStyle(fontWeight: FontWeight.w600),),
@@ -80,7 +83,7 @@ margin: EdgeInsets.symmetric(vertical: 20),
                    // padding: EdgeInsets.symmetric(horizontal: 5),
                     child: Row(
 
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                     // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Icon(Icons.square,color: Colors.red,),
                         Icon(Icons.square,color: Colors.blue,),
